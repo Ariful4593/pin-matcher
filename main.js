@@ -36,6 +36,11 @@ function submitBtn(){
             document.getElementById("accept").style.display = "none";
         }
         document.getElementById("result").value = "";
+        if(resultValue == "")
+        {
+            document.getElementById("result").focus()
+            document.getElementById("reject").style.display = "none";
+        }
     })
 }
 
